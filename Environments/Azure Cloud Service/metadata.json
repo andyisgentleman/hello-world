@@ -1,0 +1,6 @@
+{
+  "itemDisplayName": "Azure Cloud Service",
+  "description": "This template creates an cloud service",
+  "githubUsername": "Andy",
+  "summary": "Deploys a cloud service as an environment in a DevTest Lab."
+}
