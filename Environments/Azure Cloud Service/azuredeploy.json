@@ -1,0 +1,18 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "cloudName": {
+            "defaultValue": "cloudsrvctest",
+            "type": "String"
+        }
+    },
+    "resources": [
+        {
+            "type": "Microsoft.ClassicCompute/domainNames",
+            "apiVersion": "2015-06-01",
+            "name": "[parameters('cloudName')]",
+            "location": "[resourceGroup().location]"
+        }
+    ]
+}
